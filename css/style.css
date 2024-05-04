@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gloock-2");
 :root {
   --color1:#ff5f13;
   --color2:#191a33;
@@ -13,7 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-decoration: none;
   quotes: none;
   list-style: none;
-  font-family: "Poppins", "Lato";
+  font-family: "Rubik", "Poppins", "Lato";
 }
 
 html, body {
@@ -47,7 +49,7 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
 
 input, textarea {
   border-radius: 0px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Rubik", "Poppins", Arial, Helvetica, sans-serif;
 }
 
 input[type=submit], input[type=button] {
@@ -57,13 +59,13 @@ input[type=submit], input[type=button] {
 }
 
 button {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Rubik", "Poppins", Arial, Helvetica, sans-serif;
   background: none;
   border: none;
 }
 
 span {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Rubik", "Poppins", Arial, Helvetica, sans-serif;
 }
 
 blockquote::before, blockquote::after, q::before, q::after {
@@ -98,7 +100,7 @@ a {
   transition: all 0.9s ease 0s;
   outline: none;
   text-decoration: none;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Rubik", "Poppins", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -108,46 +110,46 @@ a {
 
 body h1 {
   font-size: 36px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 body h2 {
   font-size: 24px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Teko", "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   color: var(--color1);
 }
 
 body h3 {
   font-size: 20px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Teko", "Poppins", Arial, Helvetica, sans-serif;
 }
 
 body h4 {
   font-size: 16px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Teko", "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   font-style: italic;
 }
 
 body h5 {
   font-size: 14px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Teko", "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 body h6 {
   font-size: 12px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Teko", "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 body p {
   font-size: 16px;
   line-height: 25px;
   font-weight: normal;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Rubik", "Poppins", Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
   color: #777777;
@@ -161,7 +163,7 @@ img {
 }
 
 body {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Rubik", "Poppins", Arial, Helvetica, sans-serif;
   width: 100%;
   position: relative;
   height: 100%;
@@ -171,9 +173,37 @@ body {
 header {
   background: var(--color2);
 }
+header .logo h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 40px;
+}
+header .logo span {
+  color: var(--color1);
+  font-weight: 800;
+  font-family: "Gloock", sans-serif;
+}
 
 .desktop-navigation .top-navigation {
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+}
+.desktop-navigation .nav-search input {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #dadada;
+  font-size: 14px;
+  font-weight: 300;
+}
+.desktop-navigation .nav-search input::-moz-placeholder {
+  color: rgba(218, 218, 218, 0.4);
+}
+.desktop-navigation .nav-search input::placeholder {
+  color: rgba(218, 218, 218, 0.4);
+}
+.desktop-navigation .nav-search button {
+  color: #dadada;
+  font-size: 18px;
 }
 
 .slick-prev, .slick-next {
