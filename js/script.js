@@ -35,21 +35,21 @@
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    var vid = document.querySelector('video');
+$(document).ready(function() {
+    var video = $('video')[0];
 
     var options = {
         root: null, // using the viewport as the root
         rootMargin: '0px',
-        threshold: 0.8 // 80% of the video must be in view
+        threshold: 1.0 // 100% of the video must be in view
     };
 
-    var observer = new IntersectionObserver (function(entries) {
+    var observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                vid.play();
+                video.play();
             } else {
-                vid.pause();
+                video.pause();
             }
         });
     }, options);

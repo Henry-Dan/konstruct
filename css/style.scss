@@ -41,7 +41,14 @@ body{
 
 
 /* Main Navigation styling*/
-
+header{
+    background: var(--color2);
+}
+.desktop-navigation{
+    .top-navigation{
+        border-bottom: 1px #fff solid;
+    }
+}
 
 
 //SLICK SLIDER CSS

@@ -168,6 +168,14 @@ body {
 }
 
 /* Main Navigation styling*/
+header {
+  background: var(--color2);
+}
+
+.desktop-navigation .top-navigation {
+  border-bottom: 1px #fff solid;
+}
+
 .slick-prev, .slick-next {
   color: #777777;
   font-size: 20px;
