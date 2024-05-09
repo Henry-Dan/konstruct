@@ -171,39 +171,80 @@ body {
 
 /* Main Navigation styling*/
 header {
-  background: var(--color2);
+  background-image: url("../images/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
-header .logo h1 {
-  color: rgb(255, 255, 255);
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(25, 26, 51, 0.9);
+  z-index: 1;
+}
+
+.desktop-navigation .top-navigation {
+  border-bottom: 1px #aaa solid;
+  z-index: 12;
+}
+.desktop-navigation .top-navigation .nav-search {
+  min-width: 200px;
+}
+.desktop-navigation .top-navigation .nav-search input {
+  border: none;
+  border-bottom: 1px solid #bebebe;
+  background: transparent;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%;
+}
+.desktop-navigation .top-navigation .nav-search input::-moz-placeholder {
+  color: #777;
+}
+.desktop-navigation .top-navigation .nav-search input::placeholder {
+  color: #777;
+}
+.desktop-navigation .top-navigation .nav-search button {
+  color: #dadada;
+  font-size: 13px;
+}
+.desktop-navigation .top-navigation .logo h1 {
+  color: white;
   font-weight: 400;
   font-size: 40px;
+  line-height: 1;
+  padding-top: 5px;
+  letter-spacing: 1px;
 }
-header .logo span {
+.desktop-navigation .top-navigation .logo span {
   color: var(--color1);
   font-weight: 800;
   font-family: "Gloock", sans-serif;
 }
-
-.desktop-navigation .top-navigation {
-  border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+.desktop-navigation .top-navigation .sign-up {
+  min-width: 200px;
+  float: right;
 }
-.desktop-navigation .nav-search input {
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  background: transparent;
-  color: #dadada;
-  font-size: 14px;
+.desktop-navigation .bottom-navigation {
+  position: relative;
+  z-index: 12;
+}
+.desktop-navigation .bottom-navigation ul li a {
+  font-size: 15px;
   font-weight: 300;
 }
-.desktop-navigation .nav-search input::-moz-placeholder {
-  color: rgba(218, 218, 218, 0.4);
+.desktop-navigation .bottom-navigation ul li a:hover {
+  color: var(--color1) !important;
 }
-.desktop-navigation .nav-search input::placeholder {
-  color: rgba(218, 218, 218, 0.4);
-}
-.desktop-navigation .nav-search button {
-  color: #dadada;
-  font-size: 18px;
+.desktop-navigation .bottom-navigation ul li a.active {
+  color: var(--color1) !important;
+  font-weight: 400;
 }
 
 .slick-prev, .slick-next {

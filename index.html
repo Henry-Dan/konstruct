@@ -10,9 +10,8 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
 
-     <!--CDN Link to Bootstrap 4.6 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
+     <!--CDN Link to Bootstrap 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!--CDN Link to JQuery Slick CSS Library -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -23,27 +22,27 @@
 <body>
     <header class="container-fluid">
         <nav class="desktop-navigation container">
-            <div class="top-navigation d-flex justify-content-between py-3 align-items-center">
+            <div class="top-navigation d-flex justify-content-between py-1 align-items-center position-relative ">
                 <div class="nav-search d-flex align-items-center">
-                    <input type="text" name="" id="" placeholder="Search here..." class="py-1">
-                    <button class="ml-3 pt-2"><i class="fi fi-rr-search"></i></button>
+                    <input type="text" name="" id="" placeholder="Search here..." class="">
+                    <button class="ms-2 pt-2"><i class="fi fi-rr-search"></i></button>
                 </div>
                 <div class="logo">
                     <h1><span>K</span>onstruct</h1>
                 </div>
-                <div class="sign-up">
-                    <a href="">Login</a>
-                    <a href=""><i class="fi fi-rr-shopping-cart"></i></a>
+                <div class="sign-up d-flex justify-content-end ">
+                    <a href="" class="text-light me-2">Login</a>
+                    <a href="" class="text-light"><i class="fi fi-rr-shopping-cart"></i></a>
                 </div>
             </div>
             <div class="bottom-navigation">
-                <ul class="w-100 d-flex justify-content-center py-4 ">
-                    <li class="px-3"><a href="#" class="text-white ">Home</a></li>
-                    <li class="px-3"><a href="#" class="text-white ">Our Story</a></li>
-                    <li class="px-3"><a href="" class="text-white ">Shop</a></li>
-                    <li class="px-3"><a href="" class="text-white ">Projects</a></li>
-                    <li class="px-3"><a href="" class="text-white ">Media Center</a></li>
-                    <li class="px-3"><a href="" class="text-white ">Contact Us</a></li>
+                <ul class="w-100 d-flex justify-content-center">
+                    <li><a href="#" class="text-white p-3 float-start   active">Home</a></li>
+                    <li><a href="#" class="text-white p-3 float-start  ">Our Story</a></li>
+                    <li><a href="" class="text-white p-3 float-start  ">Shop</a></li>
+                    <li><a href="" class="text-white p-3 float-start  ">Projects</a></li>
+                    <li><a href="" class="text-white p-3 float-start  ">Media Center</a></li>
+                    <li><a href="" class="text-white p-3 float-start  ">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -52,8 +51,8 @@
         </div>
     </header>
     <main class="container">
-        <section class="home-banner-wrapper">
-            <div class="home-banner py-3 ">
+        <section class="home-banner-wrapper pb-5">
+            <div class="home-banner ">
                 <figure>
                     <img src="images/construction-site.jpg" alt="">
                 </figure>
@@ -279,7 +278,7 @@
                 </div>
                 <div class="footer-column col-12 col-md-6 col-lg-4 col-xl-3">
                     <h2 class="text-uppercase py-3 px-4 border-bottom">Get in Touch</h2>
-                    <p class="pt-3 pl-4 pb-2"> Karume Heights - 4th Floor, <br>First Parklands Avenue, Nairobi</p>
+                    <p class="pt-3 ps-4 pb-2"> Karume Heights - 4th Floor, <br>First Parklands Avenue, Nairobi</p>
                     <ul class="py-2 px-4">
                         <li class="pb-2 "><a href="tel:+254720444333">+254 720 444 333</a></li>
                         <li class="pb-2 "><a href="mailto:info@konstructio.com">info@konstructio.com</a></li>
@@ -288,10 +287,10 @@
                 <div class="footer-column col-12 col-md-6 col-lg-4 col-xl-3">
                     <h2 class="py-3 px-4 border-bottom">FOLLOW US:</h2>
                     <ul class="py-3 px-4 d-flex ">
-                        <li class="pr-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                        <li class="pr-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-facebook"></i></a></li>
-                        <li class="pr-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-instagram"></i></a></li>
-                        <li class="pr-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li class="pe-3"><a href="#" target="_blank" class=""><i class="fa-brands fa-square-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -299,9 +298,8 @@
     </footer>
 
      <!-- Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <!-- Fontawesome CDN Link-->
     <script src="https://kit.fontawesome.com/39a57ebc35.js" crossorigin="anonymous"></script>
     <!-- Slick Slider JS CDN Link-->
