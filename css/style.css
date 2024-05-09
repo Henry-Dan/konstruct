@@ -115,10 +115,11 @@ body h1 {
 }
 
 body h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Teko", "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: var(--color1);
+  letter-spacing: 1.5px;
 }
 
 body h3 {
@@ -245,6 +246,20 @@ header::before {
 .desktop-navigation .bottom-navigation ul li a.active {
   color: var(--color1) !important;
   font-weight: 400;
+}
+
+.home-banner {
+  width: 100%;
+  position: relative;
+}
+.home-banner .home-banner-content {
+  position: relative;
+  left: 50%;
+  margin-top: -50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: translateX(-50%);
+  background: url("../images/orange-bg.jpg");
 }
 
 .slick-prev, .slick-next {

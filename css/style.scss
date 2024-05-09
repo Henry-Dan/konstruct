@@ -26,7 +26,7 @@ table { border-collapse: collapse; border-spacing: 0px; }
 a { transition: all 0.9s ease 0s; outline: none; text-decoration: none; font-family: 'Rubik','Poppins', Arial, sans-serif;font-weight:400; }
 .clearfloat { clear: both; }
 body h1 {font-size: 36px; font-family: 'Teko', Arial, Helvetica, sans-serif;font-weight: 500;}
-body h2 {font-size: 24px; font-family: 'Teko','Poppins', Arial, Helvetica, sans-serif;font-weight: 500;color: var(--color1);}
+body h2 {font-size: 28px; font-family: 'Teko','Poppins', Arial, Helvetica, sans-serif;font-weight: 500;color: var(--color1); letter-spacing: 1.5px;}
 body h3 {font-size: 20px; font-family: 'Teko','Poppins', Arial, Helvetica, sans-serif;}
 body h4 {font-size: 16px; font-family: 'Teko','Poppins', Arial, Helvetica, sans-serif;font-weight: 500;font-style: italic;}
 body h5 { font-size: 14px;  font-family: 'Teko','Poppins', Arial, Helvetica, sans-serif;font-weight: 500; }
@@ -126,6 +126,21 @@ header{
                 font-weight: 400;
             }
         }
+    }
+}
+
+
+//Home page sections
+.home-banner{
+    width: 100%;
+    position: relative;
+    .home-banner-content{
+        position: relative;
+        left: 50%;
+        margin-top: -50px;
+        width: fit-content;
+        transform: translateX(-50%);
+        background: url('../images/orange-bg.jpg');
     }
 }
 

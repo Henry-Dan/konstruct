@@ -41,7 +41,7 @@ $(document).ready(function() {
     var options = {
         root: null, // using the viewport as the root
         rootMargin: '0px',
-        threshold: 1.0 // 100% of the video must be in view
+        threshold: 0.7 // 70% of the video must be in view
     };
 
     var observer = new IntersectionObserver(function(entries) {
