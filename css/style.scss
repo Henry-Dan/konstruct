@@ -23,7 +23,7 @@ ins { text-decoration: none; }
 del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0px; }
 *, ::after, ::before { box-sizing: border-box; -webkit-font-smoothing: antialiased; margin: 0px; padding: 0px; }
-a { transition: all 0.9s ease 0s; outline: none; text-decoration: none; font-family: 'Rubik','Poppins', Arial, sans-serif;font-weight:400; }
+a { transition: all 0.9s ease 0s!important; outline: none; text-decoration: none; font-family: 'Rubik','Poppins', Arial, sans-serif;font-weight:400; }
 .clearfloat { clear: both; }
 body h1 {font-size: 36px; font-family: 'Teko', Arial, Helvetica, sans-serif;font-weight: 500;}
 body h2 {font-size: 28px; font-family: 'Teko','Poppins', Arial, Helvetica, sans-serif;font-weight: 500;color: var(--color1); letter-spacing: 1.5px;}
@@ -38,6 +38,10 @@ body{
     width: 100%;
     position: relative;
     height: 100%;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    border: none;
 }
 
 
@@ -139,10 +143,116 @@ header{
         left: 50%;
         margin-top: -50px;
         width: fit-content;
+        max-width: 500px;
         transform: translateX(-50%);
         background: url('../images/orange-bg.jpg');
+        a{
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--color1);
+            &:hover{
+                border-color: var(--color2)!important;
+                color: var(--color2)!important;
+            }
+        }
     }
 }
+.services-list-content{
+    h3{
+        font-size: 1.6em!important;
+        color: var(--color2);
+        font-weight: 400;
+        letter-spacing: 0.4px;
+    }
+    p{
+        font-style: italic;
+        font-weight: 300;
+    }
+    a{
+        border: 1px var(--color1) solid;
+        color: var(--color1);
+        transition: all 0.9s ease 0s;
+        font-size: 15px;
+        &:hover{
+            background-color: var(--color1);
+            color: white;
+        }
+    }
+}
+.services-video{
+    width: 100%;
+    position: relative;
+}
+.services-video-content{
+    position: relative;   
+    left: 50%;
+    margin-top: -50px;
+    width: fit-content;
+    min-width: 450px;
+    max-width: 480px;
+    transform: translateX(-50%);
+    background: url('../images/orange-bg.jpg');
+    a {
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--color1);
+        &:hover {
+            border-color: var(--color2) !important;
+            color: var(--color2) !important;
+        }
+    }
+}
+.home-products-list{
+    .offer-badge{
+        width: 60px;
+        height: 60px;
+        background: url('../images/badge.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        p{
+            color: white;
+            font-weight: 700;
+            padding-bottom: 4px;
+            font-family: 'Teko';
+            span{
+                // font-family: 'Teko';
+                font-size: 15px;
+            }
+        }
+        .offer-discount{
+            padding: 5px 0 0 0;
+            font-size: 18px;
+            font-family: 'Rubik';
+            line-height: 0.5;
+            span{
+                font-weight: 300;
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}
+
+.products-list-content{
+    h3{
+        font-family: 'Rubik', 'Poppins', sans-serif;
+        font-size: 18px!important;
+        color: #333;
+    }
+    .product-price{
+        color: var(--color1);
+        font-size: 18px!important;
+        font-weight: 300;
+        span{
+            color: gray;
+            font-size: 13px!important;
+
+        }
+    }
+}
+
+
 
 
 
@@ -163,7 +273,8 @@ header{
 }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
     border-color: var(--color1);
-    color: var(--color1);
+    background: var(--color1);
+    color: white;
 }
 .slick-prev{
     left: -15px;

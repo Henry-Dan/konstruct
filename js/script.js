@@ -1,6 +1,6 @@
 
   $(document).ready(function(){
-    $('.home-services-list,.home-projects-list').slick({
+    $('.home-services-list,.home-products-list').slick({
         dots: false, // Adds navigation dots
         infinite: true,
         speed: 300,

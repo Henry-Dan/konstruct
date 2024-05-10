@@ -97,7 +97,7 @@ table {
 }
 
 a {
-  transition: all 0.9s ease 0s;
+  transition: all 0.9s ease 0s !important;
   outline: none;
   text-decoration: none;
   font-family: "Rubik", "Poppins", Arial, sans-serif;
@@ -168,6 +168,10 @@ body {
   width: 100%;
   position: relative;
   height: 100%;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  border: none;
 }
 
 /* Main Navigation styling*/
@@ -258,8 +262,109 @@ header::before {
   margin-top: -50px;
   width: -moz-fit-content;
   width: fit-content;
+  max-width: 500px;
   transform: translateX(-50%);
   background: url("../images/orange-bg.jpg");
+}
+.home-banner .home-banner-content a {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color1);
+}
+.home-banner .home-banner-content a:hover {
+  border-color: var(--color2) !important;
+  color: var(--color2) !important;
+}
+
+.services-list-content h3 {
+  font-size: 1.6em !important;
+  color: var(--color2);
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.services-list-content p {
+  font-style: italic;
+  font-weight: 300;
+}
+.services-list-content a {
+  border: 1px var(--color1) solid;
+  color: var(--color1);
+  transition: all 0.9s ease 0s;
+  font-size: 15px;
+}
+.services-list-content a:hover {
+  background-color: var(--color1);
+  color: white;
+}
+
+.services-video {
+  width: 100%;
+  position: relative;
+}
+
+.services-video-content {
+  position: relative;
+  left: 50%;
+  margin-top: -50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 450px;
+  max-width: 480px;
+  transform: translateX(-50%);
+  background: url("../images/orange-bg.jpg");
+}
+.services-video-content a {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color1);
+}
+.services-video-content a:hover {
+  border-color: var(--color2) !important;
+  color: var(--color2) !important;
+}
+
+.home-products-list .offer-badge {
+  width: 60px;
+  height: 60px;
+  background: url("../images/badge.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.home-products-list .offer-badge p {
+  color: white;
+  font-weight: 700;
+  padding-bottom: 4px;
+  font-family: "Teko";
+}
+.home-products-list .offer-badge p span {
+  font-size: 15px;
+}
+.home-products-list .offer-badge .offer-discount {
+  padding: 5px 0 0 0;
+  font-size: 18px;
+  font-family: "Rubik";
+  line-height: 0.5;
+}
+.home-products-list .offer-badge .offer-discount span {
+  font-weight: 300;
+  position: relative;
+  top: -3px;
+}
+
+.products-list-content h3 {
+  font-family: "Rubik", "Poppins", sans-serif;
+  font-size: 18px !important;
+  color: #333;
+}
+.products-list-content .product-price {
+  color: var(--color1);
+  font-size: 18px !important;
+  font-weight: 300;
+}
+.products-list-content .product-price span {
+  color: gray;
+  font-size: 13px !important;
 }
 
 .slick-prev, .slick-next {
@@ -279,7 +384,8 @@ header::before {
 
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   border-color: var(--color1);
-  color: var(--color1);
+  background: var(--color1);
+  color: white;
 }
 
 .slick-prev {
