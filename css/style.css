@@ -174,13 +174,17 @@ body {
 
 /* Main Navigation styling*/
 header {
+  width: 100%;
+}
+
+.desktop-navigation {
   background-image: url("../images/header-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
-header::before {
+.desktop-navigation::before {
   content: "";
   position: absolute;
   top: 0;
@@ -190,7 +194,6 @@ header::before {
   background: rgba(25, 26, 51, 0.9);
   z-index: 1;
 }
-
 .desktop-navigation .top-navigation {
   border-bottom: 1px #aaa solid;
   z-index: 12;
@@ -248,6 +251,45 @@ header::before {
 .desktop-navigation .bottom-navigation ul li a.active {
   color: var(--color1) !important;
   font-weight: 400;
+}
+
+.mobile-navigation .visible-mobile {
+  background-image: url("../images/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mobile-navigation .visible-mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(25, 26, 51, 0.9);
+  z-index: 1;
+}
+.mobile-navigation .visible-mobile button {
+  position: relative;
+  z-index: 12;
+}
+.mobile-navigation .mobile-logo {
+  position: relative;
+  z-index: 12;
+}
+.mobile-navigation .mobile-logo h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  padding-top: 5px;
+  letter-spacing: 1px;
+}
+.mobile-navigation .mobile-logo span {
+  color: var(--color1);
+  font-weight: 800;
+  font-family: "Gloock", sans-serif;
 }
 
 .home-banner {
