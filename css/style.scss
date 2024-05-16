@@ -170,7 +170,11 @@ header{
             font-family: 'Gloock', sans-serif;
         }
     }
-
+    .hidden-mobile{
+        ul li{
+            border-bottom: var(--color1) 1px solid;
+        }
+    }
 }
 
 

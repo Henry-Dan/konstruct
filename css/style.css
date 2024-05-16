@@ -291,6 +291,9 @@ header {
   font-weight: 800;
   font-family: "Gloock", sans-serif;
 }
+.mobile-navigation .hidden-mobile ul li {
+  border-bottom: var(--color1) 1px solid;
+}
 
 .home-banner {
   width: 100%;
