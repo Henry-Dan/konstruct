@@ -171,8 +171,20 @@ header{
         }
     }
     .hidden-mobile{
-        ul li{
+        z-index: 123;
+        display: none;
+        ul{
+            border-top: 1px solid var(--color1);
+        }
+        li{
             border-bottom: var(--color1) 1px solid;
+            a{
+                background: #191a33;
+                color: white;
+                &:hover{
+                    background: var(--color1);
+                }
+            }
         }
     }
 }

@@ -32,6 +32,10 @@
             }
         ]
     });
+    $('.menu-icon').click(function(){
+        $('.hidden-mobile').slideToggle();
+        $('.menu-icon i').toggleClass('fa-bars fa-xmark');
+    });
 });
 
 

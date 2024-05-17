@@ -291,8 +291,22 @@ header {
   font-weight: 800;
   font-family: "Gloock", sans-serif;
 }
-.mobile-navigation .hidden-mobile ul li {
+.mobile-navigation .hidden-mobile {
+  z-index: 123;
+  display: none;
+}
+.mobile-navigation .hidden-mobile ul {
+  border-top: 1px solid var(--color1);
+}
+.mobile-navigation .hidden-mobile li {
   border-bottom: var(--color1) 1px solid;
+}
+.mobile-navigation .hidden-mobile li a {
+  background: #191a33;
+  color: white;
+}
+.mobile-navigation .hidden-mobile li a:hover {
+  background: var(--color1);
 }
 
 .home-banner {
