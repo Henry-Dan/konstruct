@@ -24,10 +24,19 @@
                 }
             },
             {
+                breakpoint: 768, // From tablet to mobile
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true,
+                }
+            },
+            {
                 breakpoint: 600, // From tablet to mobile
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots:true
                 }
             }
         ]
