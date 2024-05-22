@@ -1,2 +1,2 @@
 # project-bootstrap
-Konstruct construction company
+Konstruct construction company homepage template using bootstrap 5.2
