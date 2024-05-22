@@ -361,7 +361,7 @@ header{
     padding-top: 3em!important;
     h3{
         font-family: 'Rubik', 'Poppins', sans-serif;
-
+        font-size: 20px;
     }
     h4{
         letter-spacing: 1px;
@@ -415,11 +415,47 @@ footer{
     right: -15px;
 }
 
-
+.sub-menu{
+    display: none;
+    width:700px;
+    top: 55px;
+    .sub-menu-column{
+        p{
+            font-size: 16px;
+            padding-bottom: 2px;
+            margin-bottom: 8px;
+            // border-bottom: 1px var(--color1) solid;
+            font-weight: 700;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                left: 0;
+                width: 50px;
+                height: 2px;
+                background: var(--color1);
+                bottom: 0;
+            }
+        }
+        a{
+            color: #333;
+            font-size: 15px;
+            padding-bottom: 5px;
+            font-weight: 500;
+            &:hover{
+                color: var(--color1);
+                font-weight: 700;
+            }
+        }
+    }
+}
 
 
 
 //MEDIA QUERIES START
+@media (max-width: 1200px) {
+    .sub-menu{left: -200px;}
+}
 @media (max-width: 768px) {
     .home-banner .home-banner-content{margin-top: 0;}
     .services-video-content{margin-top: -8px;}

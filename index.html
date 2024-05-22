@@ -41,12 +41,41 @@
                     <ul class="w-100 d-flex justify-content-center">
                         <li><a href="#" class="text-white p-3 float-start   active">Home</a></li>
                         <li><a href="#" class="text-white p-3 float-start  ">Our Story</a></li>
-                        <li>
-                            <a href="" class="text-white p-3 float-start position-relative ">Shop <i class="fa-solid fa-chevron-down"></i>
-                                <div class="sub-menu position-absolute ">
-                                    
+                        <li class="position-relative ">
+                            <a href="" class="text-white p-3 float-start " id="toggle-menu">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="sub-menu position-absolute bg-white p-4 shadow container ">
+                                <div class="row">
+                                    <div class="sub-menu-column d-block col-4 ">
+                                        <p>Shop by Category</p>
+                                        <ul class="d-block ">
+                                            <li><a href="">Building and Hardware</a></li>
+                                            <li><a href="">Plumbing</a></li>
+                                            <li><a href="">Painting</a></li>
+                                            <li><a href="">Electrical & Lighting</a></li>
+                                            <li><a href="">Household & Decorations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column d-block col-4 border-start border-end ">
+                                        <p>Top Brands</p>
+                                        <ul class="d-block ">
+                                            <li><a href="">KenTank</a></li>
+                                            <li><a href="">Doshi Steel</a></li>
+                                            <li><a href="">Mabati Rolling Mills</a></li>
+                                            <li><a href="">Simba Cement</a></li>
+                                            <li><a href="">PowerMax</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu-column d-block col-4 ">
+                                        <p>Quick Links</p>
+                                        <ul class="d-block ">
+                                            <li><a href="">Login / Register</a></li>
+                                            <li><a href="">Refund Policy</a></li>
+                                            <li><a href="">Privacy Policy</a></li>
+                                            <li><a href="">Terms & Conditions</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                         <li><a href="" class="text-white p-3 float-start  ">Projects</a></li>
                         <li><a href="" class="text-white p-3 float-start  ">Media Center</a></li>
@@ -110,7 +139,7 @@
                 </li>
                 <li class="px-lg-3 px-2">
                     <div class="h-100">
-                        <img src="images/service1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <img src="images/architectural.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
                         <div class="services-list-content">
                             <div>
                                 <h3 class="pt-3 fs-3 pb-2">Architectural Design</h3>
@@ -122,7 +151,7 @@
                 </li>
                 <li class="px-lg-3 px-2">
                     <div class="h-100">
-                        <img src="images/service1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <img src="images/electrical.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
                         <div class="services-list-content">
                             <div>
                                 <h3 class="pt-3 fs-3 pb-2">Electrical Systems</h3>
@@ -134,7 +163,7 @@
                 </li>
                 <li class="px-lg-3 px-2">
                     <div class="h-100">
-                        <img src="images/service1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <img src="images/material.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
                         <div class="services-list-content">
                             <div>
                                 <h3 class="pt-3 fs-3 pb-2">Material Supply</h3>
@@ -146,7 +175,7 @@
                 </li>
                 <li class="px-lg-3 px-2">
                     <div class="h-100">
-                        <img src="images/service1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <img src="images/land-mining.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
                         <div class="services-list-content">
                             <div>
                                 <h3 class="pt-3 fs-3 pb-2">Land Mining</h3>
@@ -158,7 +187,7 @@
                 </li>
                 <li class="px-lg-3 px-2">
                     <div class="h-100">
-                        <img src="images/service1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <img src="images/cranes.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
                         <div class="services-list-content">
                             <div>
                                 <h3 class="pt-3 fs-3 pb-2">Crane Services </h3>
@@ -170,7 +199,7 @@
                 </li>
                 <li class="px-lg-3 px-2">
                     <div class="h-100">
-                        <img src="images/service1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                        <img src="images/project.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
                         <div class="services-list-content">
                             <div>
                                 <h3 class="pt-3 fs-3 pb-2">Project Management</h3>
@@ -295,8 +324,16 @@
                     <div>
                         <h4 class="mb-2 fs-4 fw-normal">Welcome to <span>K</span>onstruct Limited</h4>
                         <h2 class="mb-2 fs-3">Quality and Affordable Construction Solutions</h2>
-                        <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, odit illum magni nemo fugiat temporibus nobis molestiae vitae. Atque perspiciatis, ducimus molestias illo ad sunt unde ea in placeat ratione.</p>
-                        <p class="pb-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt laborum distinctio at eaque error tempore. Iste maxime nihil id ab cupiditate possimus quaerat voluptatem.</p>
+                        <p class="pb-2">
+                            Welcome to Konstruct, where quality craftsmanship and client satisfaction are our top priorities. 
+                            With over 20 years of experience, we specialize in residential and commercial construction, delivering 
+                            innovative solutions and exceptional results on every project. 
+                        </p>
+                        <p class="pb-2 ">
+                            Our dedicated team is committed to turning your vision into reality, ensuring every detail is meticulously
+                            managed from concept to completion. Trust Konstruct for your next project and experience unparalleled 
+                            service and excellence.
+                        </p>
                     </div>
                     <a href="#" class="learn-more-btn mt-2 mt-xl-5 align-self-start px-4 text-uppercase d-flex align-items-center">Learn More <i class="fi fi-rs-arrow-right ms-2"></i></a>
                 </div>

@@ -45,6 +45,16 @@
         $('.hidden-mobile').slideToggle();
         $('.menu-icon i').toggleClass('fa-bars fa-xmark');
     });
+    // $("#toggle-menu").click(function(event) {
+    //     event.preventDefault();
+    //     $(".sub-menu").slideToggle();
+    // });
+});
+$(document).ready(function() {
+    $("#toggle-menu").click(function(event) {
+        event.preventDefault();
+        $(".sub-menu").slideToggle();
+    });
 });
 
 
